@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Projects</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #041d42;
+    }
+
+    header h1 {
+      margin-top: 15px;
+      text-align: center;
+      color: azure;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    nav {
+      border-bottom: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+      height: 50px;
+      animation: float2 4s ease-in-out infinite;
+
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 20px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0ff;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes float2 {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .img-container {
+      border:2px whitesmoke solid;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 40px 0;
+    }
+
+    .img-container img {
+      display: block;
+      max-width: 90%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+
+    }
+
+    .img-container img {
+      width: 350px;
+      border-radius: 10px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .img-container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .img-container img {
+        max-width: 600px;
+        margin: 10px;
+      }
+    }
+
+    .img-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .download-btn {
+      margin-top: 10px;
+      background-color: #0152cc;
+      color: #fff;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .download-btn:hover {
+      background-color: #0ff;
+      color: #000;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <a href="/">Back to Home</a>
+    </nav>
+    <h1>This is my Portfilio logo designs. thanks To see it!</h1>
+  </header>
+
+  <div class="img-container" alt="Project 1">
+    <div class="img-item">
+      <img src="./assets/Brown Beige Circle Chinese Food Logo.png" alt="">
+      <a href="./assets/Brown Beige Circle Chinese Food Logo.png" download class="download-btn">⬇ Download it</a>
+    </div>
+    <div class="img-item">
+    <img src="./assets/integra full logo.jpg" alt="">
+    <a href="./assets/integra full logo.jpg" download class="download-btn">⬇ Download it</a>
+  </div>
+  <div class="img-item">
+    <img src="./assets/smooth care logo.png" alt="">
+    <a href="./assets/smooth care logo.png" download class="download-btn">⬇ Download it</a>
+  </div>
+  <div class="img-item">
+    <img style="background-color:aliceblue" src="./assets/FKN_trade_logo (1).png" alt="">
+    <a href="./assets/FKN_trade_logo (1).png" download class="download-btn">⬇ Download it</a>
+  </div>
+  <div class="img-item">
+    <img src="./assets/tck cloud.JPG" alt="">
+    <a href="./assets/tck cloud.JPG" download class="download-btn">⬇ Download it</a>
+  </div>
+  </div>
+</body>
+<script>
+  // Smooth scroll
+  window.open(alert("Wecolme to portfolio designs page"))
+</script>
+
+</html>
